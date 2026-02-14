@@ -1,0 +1,1218 @@
+
+/* 
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* ===== Body ===== */
+body {
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+/* ===== Navbar ===== */
+nav {
+  background-color: #1e293b;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav button {
+  margin-left: auto;
+  background-color: #ef4444;
+  border: none;
+  padding: 8px 14px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+nav button:hover {
+  background-color: #dc2626;
+}
+
+/* ===== Pages ===== */
+.page {
+  padding: 30px;
+}
+
+.page h2 {
+  margin-bottom: 20px;
+  color: #1e293b;
+}
+
+/* ===== Cards ===== */
+.card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 10px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== Tables ===== */
+.table-status {
+  font-weight: bold;
+}
+
+.available {
+  color: rgb(52, 84, 113);
+}
+
+.unavailable {
+  color: rgb(56, 81, 58);
+}
+
+/* ===== Forms ===== */
+form {
+  background-color: rgb(21, 40, 55);
+  padding: 20px;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #072d14;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #181f54;
+}
+
+/* ===== Auth pages ===== */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+/* ===== Admin ===== */
+.admin-box {
+  background-color: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+
+/* ===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* ===== Body ===== */
+body {
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+/* ===== Navbar ===== */
+nav {
+  background-color: #1e293b;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav button {
+  margin-left: auto;
+  background-color: #ef4444;
+  border: none;
+  padding: 8px 14px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+nav button:hover {
+  background-color: #dc2626;
+}
+
+/* ===== Pages ===== */
+.page {
+  padding: 30px;
+}
+
+.page h2 {
+  margin-bottom: 10px;
+  color: #1e293b;
+}
+
+.page p {
+  margin-bottom: 20px;
+}
+
+/* ===== Menu ===== */
+.menu {
+  margin-bottom: 30px;
+}
+
+.menu h3 {
+  margin-bottom: 15px;
+  color: #1e293b;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.menu-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.menu-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.menu-card h4 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #1e293b;
+}
+
+.menu-card p {
+  font-weight: bold;
+  color: #2563eb;
+}
+
+/* ===== Cart ===== */
+.cart {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  margin-top: 20px;
+}
+
+.cart h3 {
+  margin-bottom: 10px;
+  color: #284077;
+}
+
+.cart p {
+  margin: 5px 0;
+}
+
+.cart strong {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* ===== Modal ===== */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+}
+
+.modal img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.modal h3 {
+  margin-bottom: 5px;
+  color: #1e293b;
+}
+
+.modal p {
+  font-weight: bold;
+  color: #2563eb;
+  margin-bottom: 15px;
+}
+
+.modal button {
+  padding: 8px 14px;
+  margin: 5px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.modal button:first-child {
+  background-color: #1d3268;
+  color: white;
+}
+
+.modal button:first-child:hover {
+  background-color: #244264;
+}
+
+.modal button.close {
+  background-color: #7a6e32;
+  color: white;
+}
+
+.modal button.close:hover {
+  background-color: #6d6125;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .menu-grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  }
+
+  .cart {
+    max-width: 100%;
+  }
+}
+
+
+
+
+
+
+.restaurants-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.restaurant-card {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.restaurant-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.restaurant-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.restaurant-info {
+  padding: 12px;
+  text-align: center;
+}
+
+.restaurant-info h3 {
+  margin-bottom: 5px;
+  color: #1e293b;
+}
+
+.restaurant-info p {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.restaurant-info button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  background-color: #2563eb;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.restaurant-info button:hover {
+  background-color: #3056c1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.restaurant-card {
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.restaurant-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.restaurant-card img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.restaurant-card:hover img {
+  transform: scale(1.05);
+}
+
+.restaurant-info {
+  padding: 15px;
+  text-align: center;
+}
+
+.restaurant-info h3 {
+  margin-bottom: 8px;
+  font-size: 18px;
+  color: #1e293b;
+}
+
+.restaurant-info p {
+  margin-bottom: 8px;
+  color: #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.restaurant-info button {
+  padding: 20px 40px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #1d4b80, #273d76);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.restaurant-info button:hover {
+  background: linear-gradient(90deg, #1c3d65, #1d335e);
+}
+
+
+
+
+.cart {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: 300px;
+}
+
+.cart p {
+  margin: 6px 0;
+}
+
+.cart .pay-button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #243e72; 
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cart .pay-button:hover {
+  background-color: #154780;
+}
+
+
+
+
+
+
+
+
+
+
+
+.page {
+  padding: 20px 40px;
+}
+
+.restaurants-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.restaurant-card {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.restaurant-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.menu-section {
+  margin-top: 10px;
+}
+
+.menu-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  padding: 6px 10px;
+  background-color: #f8f9fa;
+  border-radius: 6px;
+}
+
+.menu-card button {
+  padding: 4px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+.menu-card button:hover {
+  background-color: #1d4ed8;
+}
+
+.cart {
+  margin-top: 20px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  width: 350px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.cart .cart-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart .pay-button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #274984;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.cart .pay-button:hover {
+  background-color: #264681;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reserve-btn {
+  padding: 8px 14px;
+  background-color: #1d4385;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.reserve-btn:hover {
+  background-color: #25396f;
+}
+
+.reservation-form {
+  background: white;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  max-width: 350px;
+}
+
+.reservation-form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.confirm-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.close-btn {
+  margin-top: 8px;
+  width: 100%;
+  background: #765813;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+
+
+
+
+
+
+.landing {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #203c56, #305285);
+  color: white;
+  text-align: center;
+}
+
+.landing h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.landing p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.enter-btn {
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  background-color: #192972;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+.enter-btn:hover {
+  background-color: #263c8b;
+}
+
+
+/* ===== Landing Hero ===== */
+.landing {
+  height: 90vh;
+  background-image: url("https://images.unsplash.com/photo-1555396273-367ea4eb4db5");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* overlay باش النص يبان */
+.overlay {
+  background: rgba(0, 0, 0, 0.55);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* ===== Text ===== */
+.overlay h1 {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+}
+
+.overlay p {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  max-width: 500px;
+}
+
+/* ===== Button ===== */
+.enter-btn {
+  padding: 14px 30px;
+  font-size: 1.1rem;
+  background-color: #1e3673;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.enter-btn:hover {
+  background-color: #214479;
+  transform: scale(1.05);
+}
+
+/* ===== Animations ===== */
+.fade-down {
+  animation: fadeDown 1.2s ease-out;
+}
+
+.fade-up {
+  animation: fadeUp 1.4s ease-out;
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+/* Keyframes */
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-8px);
+  }
+  60% {
+    transform: translateY(-4px);
+  }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .overlay h1 {
+    font-size: 2.5rem;
+  }
+  .overlay p {
+    font-size: 1.1rem;
+  }
+}
+
+
+
+
+
+
+
+
+/* ===== Cart ===== */
+.cart {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 300px;
+  margin: 20px auto;
+}
+
+.cart h3 {
+  text-align: center;
+  color: #1f2937;
+  margin-bottom: 15px;
+}
+
+.cart p {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 16px;
+}
+
+.cart strong {
+  display: block;
+  margin-top: 10px;
+  text-align: right;
+  font-size: 18px;
+  color: #111827;
+}
+
+.pay-button {
+  display: block;
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pay-button:hover {
+  background-color: #1d4ed8;
+}
+
+/* ===== Payment Form ===== */
+.payment-form {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.payment-form h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1f2937;
+}
+
+.payment-form input {
+  display: block;
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.payment-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #62531b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.payment-form button:hover {
+  background-color: #806215;
+}
+
+/* Optional: animation for modal */
+.payment-form, .cart {
+  animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+.menu-card {
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.menu-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+.card-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.edit-btn {
+  background: rgb(55, 53, 143);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background: rgb(100, 71, 22);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+
+.icon-btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.edit-btn {
+  color: rgb(122, 100, 54);
+}
+
+.delete-btn {
+  color: rgb(44, 58, 86);
+}
+
+.icon-btn:hover {
+  transform: scale(1.2);
+  transition: 0.2s;
+}
+
+
+
+
+
+/* =======================
+   MODAL OVERLAY
+======================= */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* ظل الصفحة */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+/* =======================
+   MODAL CARD / FORM
+======================= */
+.modal-card {
+  background: white; /* الفورم بيضاء */
+  padding: 25px;
+  border-radius: 15px;
+  width: 350px;
+  animation: scaleIn 0.3s ease;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+  overflow: hidden; /* scrollbar خارج الفورم مخفي */
+}
+
+/* Animation */
+@keyframes scaleIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* =======================
+   TITLE
+======================= */
+.modal-card h3 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #1e3a8a; /* Bleu royal */
+}
+
+/* =======================
+   INPUTS
+======================= */
+.modal-card input {
+  background: white; /* Input بيض */
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.modal-card input:focus {
+  border-color: #1e3a8a; /* Bleu focus */
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(30,58,138,0.2);
+}
+
+/* =======================
+   FORM ACTIONS (BUTTONS)
+======================= */
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+/* Submit Button Bleu */
+.btn-primary {
+  background: #1e3a8a; /* Bleu royal */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: #162d6d;
+  transform: translateY(-2px);
+}
+
+/* Cancel Button Marron */
+.btn-cancel {
+  background: #714c2a; /* Marron */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.btn-cancel:hover {
+  background: #5a3b20;
+}
+
+/* =======================
+   CLOSE BUTTON (X)
+======================= */
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: #1e3a8a;
+}
+
+
+
+
+
+/* =======================
+   RESTAURANT CARD
+======================= */
+.restaurant-card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* هادشي باش كلشي يجي center */
+  padding: 15px;
+  transition: transform 0.2s;
+}
+
+.restaurant-card:hover {
+  transform: translateY(-5px);
+}
+
+/* الصورة */
+.restaurant-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+/* معلومات الكارد */
+.restaurant-info h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #1e3a8a; /* Bleu royal */
+  text-align: center;
+}
+
+.restaurant-info p {
+  margin: 5px 0 15px 0;
+  color: #555;
+  text-align: center;
+}
+
+/* زر Réserver */
+.card-actions {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* هنا يجي وسط */
+}
+
+.card-actions button {
+  background: #1e3a8a; /* Bleu royal */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.card-actions button:hover {
+  background: #162d6d;
+  transform: translateY(-2px);
+}
