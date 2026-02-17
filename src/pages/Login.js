@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import { AuthContext } from "../context/AuthContext";
-
+import "./Login.css";
 export default function Login() {
   const [email, setEmail] = useState("");
   const { login } = useContext(AuthContext);

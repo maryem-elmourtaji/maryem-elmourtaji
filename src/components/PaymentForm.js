@@ -39,8 +39,7 @@ const PaymentForm = ({ total, onClose }) => {
         <p style={{ textAlign: "center", fontWeight: "bold", color: "#007bff" }}>Total: {total} DH</p>
 
         <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "12px", marginTop: "15px" }}>
-          <input type="text" placeholder="Nom complet" value={name} onChange={e => setName(e.target.value)} required style={inputStyle}/>
-          <input type="email" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} required style={inputStyle}/>
+         
           <input type="text" placeholder="Numéro de carte" value={cardNumber} onChange={e => setCardNumber(e.target.value)} required style={inputStyle}/>
           <input type="text" placeholder="Date d'expiration" value={expiry} onChange={e => setExpiry(e.target.value)} required style={inputStyle}/>
           <input type="text" placeholder="CVC" value={cvc} onChange={e => setCVC(e.target.value)} required style={inputStyle}/>
