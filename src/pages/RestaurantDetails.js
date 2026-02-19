@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-
 /*
 
 
@@ -88,7 +80,7 @@ const RestaurantDetails = ({ restaurants, user }) => {
 
   // كيحيد طبق من القائمة
   const handleRemove = (id) => {
-    setCart(cart.filter(item => item.id !== id));
+    setCart(cart.filter((item) => item.id !== id));
   };
 
   return (
@@ -96,15 +88,17 @@ const RestaurantDetails = ({ restaurants, user }) => {
       <h2>{restaurant.name}</h2>
       <p>{restaurant.city}</p>
       <img
-        src={`/images/${restaurant.image}`}
+        src={
+          restaurant.image.startsWith("http")
+            ? restaurant.image
+            : `/images/${restaurant.image}`
+        }
         alt={restaurant.name}
         style={{ width: "300px", borderRadius: "10px" }}
       />
 
       {/* Menu ديال المطعم */}
       <Menu menu={restaurant.menu} onSelect={handleSelect} />
-
-     
 
       {/* Cart Modal */}
       {showCart && (
@@ -113,10 +107,7 @@ const RestaurantDetails = ({ restaurants, user }) => {
             <button className="close-btn" onClick={() => setShowCart(false)}>
               ✖
             </button>
-            <Cart
-              cart={cart}
-              onRemove={handleRemove}
-            />
+            <Cart cart={cart} onRemove={handleRemove} />
           </div>
         </div>
       )}

@@ -6,9 +6,11 @@ export default function Restaurants() {
     <div>
       <h2>Restaurants</h2>
       {restaurants.map((r) => (
-        <p key={r.id}>{r.name}{r.image}</p>
+        <p key={r.id}>
+          {r.name}
+          {r.image}
+        </p>
       ))}
-
     </div>
   );
 }

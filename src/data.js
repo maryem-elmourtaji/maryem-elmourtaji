@@ -24,20 +24,20 @@ const restaurants = [
       { id: 17, name: "Vitello Tonnato", price: 110, image: "img17.jpeg" },
       { id: 18, name: "Calzone", price: 75, image: "img18.jpeg" },
       { id: 19, name: "Arancini", price: 65, image: "img19.jpeg" },
-      { id: 20, name: "Cannoli", price: 50, image: "img20.jpeg" }
+      { id: 20, name: "Cannoli", price: 50, image: "img20.jpeg" },
     ],
     tables: [
       { id: 1, seats: 2, available: true },
       { id: 2, seats: 4, available: true },
-      { id: 3, seats: 6, available: false }
-    ]
+      { id: 3, seats: 6, available: false },
+    ],
   },
   {
     id: 2,
     name: "Food Palace",
     city: "Rabat",
-    image: "wtp2.jpeg", 
-     menu: [
+    image: "wtp2.jpeg",
+    menu: [
       { id: 1, name: "Pizza Margherita", price: 60, image: "img1.jpeg" },
       { id: 2, name: "Pasta Carbonara", price: 75, image: "img2.jpeg" },
       { id: 3, name: "Lasagna", price: 80, image: "img3.jpeg" },
@@ -57,19 +57,19 @@ const restaurants = [
       { id: 17, name: "Vitello Tonnato", price: 110, image: "img17.jpeg" },
       { id: 18, name: "Calzone", price: 75, image: "img18.jpeg" },
       { id: 19, name: "Arancini", price: 65, image: "img19.jpeg" },
-      { id: 20, name: "Cannoli", price: 50, image: "img20.jpeg" }
+      { id: 20, name: "Cannoli", price: 50, image: "img20.jpeg" },
     ],
     tables: [
       { id: 1, seats: 2, available: true },
-      { id: 2, seats: 4, available: false }
-    ]
+      { id: 2, seats: 4, available: false },
+    ],
   },
   {
     id: 3,
     name: "Ocean View",
     city: "Agadir",
     image: "wtp3.jpeg",
- menu: [
+    menu: [
       { id: 1, name: "Pizza Margherita", price: 60, image: "img1.jpeg" },
       { id: 2, name: "Pasta Carbonara", price: 75, image: "img2.jpeg" },
       { id: 3, name: "Lasagna", price: 80, image: "img3.jpeg" },
@@ -89,19 +89,19 @@ const restaurants = [
       { id: 17, name: "Vitello Tonnato", price: 110, image: "img17.jpeg" },
       { id: 18, name: "Calzone", price: 75, image: "img18.jpeg" },
       { id: 19, name: "Arancini", price: 65, image: "img19.jpeg" },
-      { id: 20, name: "Cannoli", price: 50, image: "img20.jpeg" }
+      { id: 20, name: "Cannoli", price: 50, image: "img20.jpeg" },
     ],
     tables: [
       { id: 1, seats: 2, available: true },
-      { id: 2, seats: 6, available: true }
-    ]
+      { id: 2, seats: 6, available: true },
+    ],
   },
   {
     id: 4,
     name: "Atlas Grill",
     city: "Marrakech",
     image: "wtp4.jpeg",
- menu: [
+    menu: [
       { id: 1, name: "Pizza Margherita", price: 60, image: "img1.jpeg" },
       { id: 2, name: "Pasta Carbonara", price: 75, image: "img2.jpeg" },
       { id: 3, name: "Lasagna", price: 80, image: "img3.jpeg" },
@@ -121,19 +121,19 @@ const restaurants = [
       { id: 17, name: "Vitello Tonnato", price: 110, image: "img17.jpeg" },
       { id: 18, name: "Calzone", price: 75, image: "img18.jpeg" },
       { id: 19, name: "Arancini", price: 65, image: "img19.jpeg" },
-      { id: 20, name: "Cannoli", price: 50, image: "img20.jpeg" }
+      { id: 20, name: "Cannoli", price: 50, image: "img20.jpeg" },
     ],
     tables: [
       { id: 1, seats: 4, available: true },
-      { id: 2, seats: 8, available: false }
-    ]
+      { id: 2, seats: 8, available: false },
+    ],
   },
   {
     id: 5,
     name: "Chef’s Corner",
     city: "Fès",
     image: "wtp5.jpeg",
- menu: [
+    menu: [
       { id: 1, name: "Pizza Margherita", price: 60, image: "img1.jpeg" },
       { id: 2, name: "Pasta Carbonara", price: 75, image: "img2.jpeg" },
       { id: 3, name: "Lasagna", price: 80, image: "img3.jpeg" },
@@ -153,19 +153,19 @@ const restaurants = [
       { id: 17, name: "Vitello Tonnato", price: 110, image: "img17.jpeg" },
       { id: 18, name: "Calzone", price: 75, image: "img18.jpeg" },
       { id: 19, name: "Arancini", price: 65, image: "img19.jpeg" },
-      { id: 20, name: "Cannoli", price: 50, image: "img20.jpeg" }
+      { id: 20, name: "Cannoli", price: 50, image: "img20.jpeg" },
     ],
     tables: [
       { id: 1, seats: 2, available: true },
-      { id: 2, seats: 4, available: true }
-    ]
+      { id: 2, seats: 4, available: true },
+    ],
   },
   {
     id: 6,
     name: "Italiano",
     city: "Tanger",
     image: "wtp6.jpeg",
-   menu: [
+    menu: [
       { id: 1, name: "Pizza Margherita", price: 60, image: "img1.jpeg" },
       { id: 2, name: "Pasta Carbonara", price: 75, image: "img2.jpeg" },
       { id: 3, name: "Lasagna", price: 80, image: "img3.jpeg" },
@@ -185,12 +185,12 @@ const restaurants = [
       { id: 17, name: "Vitello Tonnato", price: 110, image: "img17.jpeg" },
       { id: 18, name: "Calzone", price: 75, image: "img18.jpeg" },
       { id: 19, name: "Arancini", price: 65, image: "img19.jpeg" },
-      { id: 20, name: "Cannoli", price: 50, image: "img20.jpeg" }
+      { id: 20, name: "Cannoli", price: 50, image: "img20.jpeg" },
     ],
     tables: [
       { id: 1, seats: 2, available: false },
-      { id: 2, seats: 6, available: true }
-    ]
+      { id: 2, seats: 6, available: true },
+    ],
   },
   {
     id: 7,
@@ -217,12 +217,12 @@ const restaurants = [
       { id: 17, name: "Vitello Tonnato", price: 110, image: "img17.jpeg" },
       { id: 18, name: "Calzone", price: 75, image: "img18.jpeg" },
       { id: 19, name: "Arancini", price: 65, image: "img19.jpeg" },
-      { id: 20, name: "Cannoli", price: 50, image: "img20.jpeg" }
+      { id: 20, name: "Cannoli", price: 50, image: "img20.jpeg" },
     ],
     tables: [
       { id: 1, seats: 4, available: true },
-      { id: 2, seats: 6, available: true }
-    ]
+      { id: 2, seats: 6, available: true },
+    ],
   },
   {
     id: 8,
@@ -234,16 +234,16 @@ const restaurants = [
         id: 1,
         name: "Pizza Margherita",
         price: 60,
-        image: "https://images.unsplash.com/photo-1601924579440-1f7fbe6c16f9"
+        image: "https://images.unsplash.com/photo-1601924579440-1f7fbe6c16f9",
       },
       {
         id: 2,
         name: "Pasta Carbonara",
         price: 75,
-        image: "https://images.unsplash.com/photo-1525755662778-989d0524087e"
-      }
+        image: "https://images.unsplash.com/photo-1525755662778-989d0524087e",
+      },
     ],
-     menu: [
+    menu: [
       { id: 1, name: "Pizza Margherita", price: 60, image: "img1.jpeg" },
       { id: 2, name: "Pasta Carbonara", price: 75, image: "img2.jpeg" },
       { id: 3, name: "Lasagna", price: 80, image: "img3.jpeg" },
@@ -263,22 +263,20 @@ const restaurants = [
       { id: 17, name: "Vitello Tonnato", price: 110, image: "img17.jpeg" },
       { id: 18, name: "Calzone", price: 75, image: "img18.jpeg" },
       { id: 19, name: "Arancini", price: 65, image: "img19.jpeg" },
-      { id: 20, name: "Cannoli", price: 50, image: "img20.jpeg" }
+      { id: 20, name: "Cannoli", price: 50, image: "img20.jpeg" },
     ],
     tables: [
       { id: 1, seats: 2, available: true },
-      { id: 2, seats: 4, available: false }
-    ]
+      { id: 2, seats: 4, available: false },
+    ],
   },
-
-
 
   {
     id: 9,
     name: "La Table d'Or",
     city: "Casablanca",
     image: "wtp1.jpeg",
- menu: [
+    menu: [
       { id: 1, name: "Pizza Margherita", price: 60, image: "img1.jpeg" },
       { id: 2, name: "Pasta Carbonara", price: 75, image: "img2.jpeg" },
       { id: 3, name: "Lasagna", price: 80, image: "img3.jpeg" },
@@ -298,12 +296,12 @@ const restaurants = [
       { id: 17, name: "Vitello Tonnato", price: 110, image: "img17.jpeg" },
       { id: 18, name: "Calzone", price: 75, image: "img18.jpeg" },
       { id: 19, name: "Arancini", price: 65, image: "img19.jpeg" },
-      { id: 20, name: "Cannoli", price: 50, image: "img20.jpeg" }
+      { id: 20, name: "Cannoli", price: 50, image: "img20.jpeg" },
     ],
     tables: [
       { id: 1, seats: 2, available: true },
-      { id: 2, seats: 4, available: true }
-    ]
+      { id: 2, seats: 4, available: true },
+    ],
   },
   {
     id: 10,
@@ -311,7 +309,7 @@ const restaurants = [
     city: "Rabat",
     image: "wtp2.jpeg",
 
- menu: [
+    menu: [
       { id: 1, name: "Pizza Margherita", price: 60, image: "img1.jpeg" },
       { id: 2, name: "Pasta Carbonara", price: 75, image: "img2.jpeg" },
       { id: 3, name: "Lasagna", price: 80, image: "img3.jpeg" },
@@ -331,22 +329,20 @@ const restaurants = [
       { id: 17, name: "Vitello Tonnato", price: 110, image: "img17.jpeg" },
       { id: 18, name: "Calzone", price: 75, image: "img18.jpeg" },
       { id: 19, name: "Arancini", price: 65, image: "img19.jpeg" },
-      { id: 20, name: "Cannoli", price: 50, image: "img20.jpeg" }
+      { id: 20, name: "Cannoli", price: 50, image: "img20.jpeg" },
     ],
-   
-
 
     tables: [
       { id: 1, seats: 2, available: true },
-      { id: 2, seats: 4, available: false }
-    ]
+      { id: 2, seats: 4, available: false },
+    ],
   },
   {
     id: 11,
     name: "Ocean View",
     city: "Agadir",
     image: "wtp3.jpeg",
-  menu: [
+    menu: [
       { id: 1, name: "Pizza Margherita", price: 60, image: "img1.jpeg" },
       { id: 2, name: "Pasta Carbonara", price: 75, image: "img2.jpeg" },
       { id: 3, name: "Lasagna", price: 80, image: "img3.jpeg" },
@@ -366,18 +362,16 @@ const restaurants = [
       { id: 17, name: "Vitello Tonnato", price: 110, image: "img17.jpeg" },
       { id: 18, name: "Calzone", price: 75, image: "img18.jpeg" },
       { id: 19, name: "Arancini", price: 65, image: "img19.jpeg" },
-      { id: 20, name: "Cannoli", price: 50, image: "img20.jpeg" }
+      { id: 20, name: "Cannoli", price: 50, image: "img20.jpeg" },
     ],
-    tables: [
-      { id: 1, seats: 4, available: true }
-    ]
+    tables: [{ id: 1, seats: 4, available: true }],
   },
   {
     id: 12,
     name: "Atlas Grill",
     city: "Marrakech",
     image: "wtp4.jpeg",
-     menu: [
+    menu: [
       { id: 1, name: "Pizza Margherita", price: 60, image: "img1.jpeg" },
       { id: 2, name: "Pasta Carbonara", price: 75, image: "img2.jpeg" },
       { id: 3, name: "Lasagna", price: 80, image: "img3.jpeg" },
@@ -397,20 +391,16 @@ const restaurants = [
       { id: 17, name: "Vitello Tonnato", price: 110, image: "img17.jpeg" },
       { id: 18, name: "Calzone", price: 75, image: "img18.jpeg" },
       { id: 19, name: "Arancini", price: 65, image: "img19.jpeg" },
-      { id: 20, name: "Cannoli", price: 50, image: "img20.jpeg" }
+      { id: 20, name: "Cannoli", price: 50, image: "img20.jpeg" },
     ],
-    tables: [
-      { id: 1, seats: 6, available: true }
-    ]
-  }
-
-,
+    tables: [{ id: 1, seats: 6, available: true }],
+  },
   {
     id: 1,
     name: "La Table d'Or",
     city: "Casablanca",
     image: "wtp5.jpeg",
- menu: [
+    menu: [
       { id: 1, name: "Pizza Margherita", price: 60, image: "img1.jpeg" },
       { id: 2, name: "Pasta Carbonara", price: 75, image: "img2.jpeg" },
       { id: 3, name: "Lasagna", price: 80, image: "img3.jpeg" },
@@ -430,19 +420,19 @@ const restaurants = [
       { id: 17, name: "Vitello Tonnato", price: 110, image: "img17.jpeg" },
       { id: 18, name: "Calzone", price: 75, image: "img18.jpeg" },
       { id: 19, name: "Arancini", price: 65, image: "img19.jpeg" },
-      { id: 20, name: "Cannoli", price: 50, image: "img20.jpeg" }
+      { id: 20, name: "Cannoli", price: 50, image: "img20.jpeg" },
     ],
     tables: [
       { id: 1, seats: 2, available: true },
-      { id: 2, seats: 4, available: true }
-    ]
+      { id: 2, seats: 4, available: true },
+    ],
   },
   {
     id: 2,
     name: "Food Palace",
     city: "Rabat",
     image: "https://images.unsplash.com/photo-1528605248644-14dd04022da1",
-   menu: [
+    menu: [
       { id: 1, name: "Pizza Margherita", price: 60, image: "img1.jpeg" },
       { id: 2, name: "Pasta Carbonara", price: 75, image: "img2.jpeg" },
       { id: 3, name: "Lasagna", price: 80, image: "img3.jpeg" },
@@ -462,12 +452,12 @@ const restaurants = [
       { id: 17, name: "Vitello Tonnato", price: 110, image: "img17.jpeg" },
       { id: 18, name: "Calzone", price: 75, image: "img18.jpeg" },
       { id: 19, name: "Arancini", price: 65, image: "img19.jpeg" },
-      { id: 20, name: "Cannoli", price: 50, image: "img20.jpeg" }
+      { id: 20, name: "Cannoli", price: 50, image: "img20.jpeg" },
     ],
     tables: [
       { id: 1, seats: 2, available: true },
-      { id: 2, seats: 4, available: false }
-    ]
+      { id: 2, seats: 4, available: false },
+    ],
   },
   {
     id: 3,
@@ -494,13 +484,10 @@ const restaurants = [
       { id: 17, name: "Vitello Tonnato", price: 110, image: "img17.jpeg" },
       { id: 18, name: "Calzone", price: 75, image: "img18.jpeg" },
       { id: 19, name: "Arancini", price: 65, image: "img19.jpeg" },
-      { id: 20, name: "Cannoli", price: 50, image: "img20.jpeg" }
+      { id: 20, name: "Cannoli", price: 50, image: "img20.jpeg" },
     ],
-    tables: [
-      { id: 1, seats: 4, available: true }
-    ]
-  }
+    tables: [{ id: 1, seats: 4, available: true }],
+  },
 ];
 
 export default restaurants;
-

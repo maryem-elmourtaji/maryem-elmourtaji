@@ -24,18 +24,6 @@ const Menu = ({ menu = [], onSelect }) => {
   );
 };
 
-
-
-
-
-
-
-
-
-
-
-
-
 import { useState } from "react";
 
 const PaymentForm = ({ total, onClose }) => {
@@ -47,45 +35,107 @@ const PaymentForm = ({ total, onClose }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert(`✅ Paiement effectué avec succès !\nMontant: ${total} DH\nMerci ${name}`);
-    setName(""); setEmail(""); setCardNumber(""); setExpiry(""); setCVC("");
+    alert(
+      `✅ Paiement effectué avec succès !\nMontant: ${total} DH\nMerci ${name}`,
+    );
+    setName("");
+    setEmail("");
+    setCardNumber("");
+    setExpiry("");
+    setCVC("");
     if (onClose) onClose();
   };
 
   return (
-    <div style={{
-      position: "fixed",
-      top: 0, left: 0, right: 0, bottom: 0,
-      backgroundColor: "rgba(0,0,0,0.6)",
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
-      zIndex: 1000,
-      animation: "fadeIn 0.3s"
-    }}>
-      <div style={{
-        backgroundColor: "white",
-        padding: "30px",
-        borderRadius: "15px",
-        width: "350px",
-        maxWidth: "90%",
-        boxShadow: "0 10px 25px black",
-        transform: "scale(0.8)",
-        animation: "popIn 0.3s forwards"
-      }}>
+    <div
+      style={{
+        position: "fixed",
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
+        backgroundColor: "rgba(0,0,0,0.6)",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        zIndex: 1000,
+        animation: "fadeIn 0.3s",
+      }}
+    >
+      <div
+        style={{
+          backgroundColor: "white",
+          padding: "30px",
+          borderRadius: "15px",
+          width: "350px",
+          maxWidth: "90%",
+          boxShadow: "0 10px 25px black",
+          transform: "scale(0.8)",
+          animation: "popIn 0.3s forwards",
+        }}
+      >
         <h3 style={{ textAlign: "center", marginBottom: "15px" }}>Paiement</h3>
-        <p style={{ textAlign: "center", fontWeight: "bold" }}>Total: {total} DH</p>
+        <p style={{ textAlign: "center", fontWeight: "bold" }}>
+          Total: {total} DH
+        </p>
 
-        <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "10px", marginTop: "10px" }}>
-          <input type="text" placeholder="Nom complet" value={name} onChange={e => setName(e.target.value)} required style={inputStyle}/>
-          <input type="email" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} required style={inputStyle}/>
-          <input type="text" placeholder="Numéro de carte" value={cardNumber} onChange={e => setCardNumber(e.target.value)} required style={inputStyle}/>
-          <input type="text" placeholder="Date d'expiration" value={expiry} onChange={e => setExpiry(e.target.value)} required style={inputStyle}/>
-          <input type="text" placeholder="CVC" value={cvc} onChange={e => setCVC(e.target.value)} required style={inputStyle}/>
-          <button type="submit" style={confirmBtnStyle}>Confirmer le paiement</button>
+        <form
+          onSubmit={handleSubmit}
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            gap: "10px",
+            marginTop: "10px",
+          }}
+        >
+          <input
+            type="text"
+            placeholder="Nom complet"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            required
+            style={inputStyle}
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+            style={inputStyle}
+          />
+          <input
+            type="text"
+            placeholder="Numéro de carte"
+            value={cardNumber}
+            onChange={(e) => setCardNumber(e.target.value)}
+            required
+            style={inputStyle}
+          />
+          <input
+            type="text"
+            placeholder="Date d'expiration"
+            value={expiry}
+            onChange={(e) => setExpiry(e.target.value)}
+            required
+            style={inputStyle}
+          />
+          <input
+            type="text"
+            placeholder="CVC"
+            value={cvc}
+            onChange={(e) => setCVC(e.target.value)}
+            required
+            style={inputStyle}
+          />
+          <button type="submit" style={confirmBtnStyle}>
+            Confirmer le paiement
+          </button>
         </form>
 
-        <button onClick={onClose} style={closeBtnStyle}>Fermer</button>
+        <button onClick={onClose} style={closeBtnStyle}>
+          Fermer
+        </button>
       </div>
 
       {/* Animations CSS */}
@@ -138,8 +188,5 @@ const closeBtnStyle = {
   width: "100%",
   transition: "0.3s",
 };
-
-
-
 
 export default PaymentForm;
